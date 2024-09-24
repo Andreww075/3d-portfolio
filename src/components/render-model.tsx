@@ -31,7 +31,7 @@ const RenderModel = ({ children, className }: Props) => {
         <Environment preset="dawn" />
       </Canvas>
     ) : (
-      <p className="text-gray-300 text-xl w-full hidden sm:block lg:hidden text-center absolute top-4 m-auto">WebGL not renderable on your device. the other portfolio features still work or you can view my <Link className="underline" href='https://nicolasportfolio-nicolas-projects-5730490e.vercel.app/'>other portfolio</Link></p>
+      <p className="text-gray-300 text-xl w-full hidden sm:block lg:block text-center absolute top-4 m-auto">WebGL not renderable on your device. the other portfolio features still work or you can view my <Link className="underline" href='https://nicolasportfolio-nicolas-projects-5730490e.vercel.app/'>other portfolio</Link></p>
     )}
     </> 
   )
