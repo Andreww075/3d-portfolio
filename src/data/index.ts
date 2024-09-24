@@ -4,7 +4,7 @@ export const projectsData = [
     name: "Portfolio 3d",
     description: "My 3d portfolio",
     date: "2024-09-24",
-    demoLink: "https://3d-portfolio-xi-six.vercel.app/",
+    demoLink: "https://3d-portfolio-delta-six.vercel.app/",
   },
   {
     id: 2,
