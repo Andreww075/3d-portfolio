@@ -1,7 +1,10 @@
+'use client';
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import bg from "@/../public/background/home-background.png";
 import RenderModel from "@/components/render-model";
-import Navigation from '@/components/navigation/index';
+import Navigation from "@/components/navigation/index";
 import dynamic from "next/dynamic";
 
 const Wizard = dynamic(() => import("@/components/models/wizard"), {
@@ -9,6 +12,13 @@ const Wizard = dynamic(() => import("@/components/models/wizard"), {
 });
 
 export default function Home() {
+  const [render, setRender] = useState(false);
+
+  useEffect(() => {
+    if (window.WebGLRenderingContext) setRender(false)
+    else setRender(true)
+  }, [])
+
   return (
     <div className="flex min-h-screen flex-col items-center justify-between relative">
       <Image
@@ -22,9 +32,11 @@ export default function Home() {
 
       <div className="w-full h-screen">
         <Navigation />
-        <RenderModel>
-          <Wizard />
-        </RenderModel>
+        {render && (
+          <RenderModel>
+            <Wizard />
+          </RenderModel>
+        )}
       </div>
     </div>
   );
