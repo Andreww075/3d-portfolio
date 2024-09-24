@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/models/wizard.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/models/wizard.jsx", "src/components/navigation/index.jsx", "src/components/navigation/nav-button.jsx", "src/components/responsive-component.jsx"],
   "exclude": ["node_modules"]
 }

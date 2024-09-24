@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import clsx from 'clsx'
+import clsx from 'clsx';
+import FireFliesBackground from "@/components/fire-flies-background";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <FireFliesBackground />
       </body>
     </html>
   );
