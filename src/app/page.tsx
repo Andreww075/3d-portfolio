@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg from "@/../public/background/home-background.png";
+import bg from "@/../public/background/home-background.jpeg";
 import RenderModel from "@/components/render-model";
 import Navigation from "@/components/navigation/index";
 import dynamic from "next/dynamic";
