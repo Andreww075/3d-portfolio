@@ -29,8 +29,7 @@ const Form = () => {
     formState: { errors },
   } = useForm();
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const sendEmail = (params:any) => {
+  const sendEmail = (params) => {
     const toastId = toast.loading("Sending your message, please wait...");
 
     toast.info(
@@ -75,8 +74,7 @@ const Form = () => {
       );
   };
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const onSubmit = (data: any) => {
+  const onSubmit = (data) => {
     const templateParams = {
       to_name: "Andreww075",
       from_name: data.name,
