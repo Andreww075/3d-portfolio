@@ -1,14 +1,14 @@
 export const projectsData = [
   {
     id: 1,
-    name: "Portfolio 3d",
-    description: "My 3d portfolio",
+    name: "Best Portfolio",
+    description: "My best portfolio",
     date: "2024-09-24",
     demoLink: "https://3d-portfolio-delta-six.vercel.app/",
   },
   {
     id: 2,
-    name: "Portfolio no 3d",
+    name: "Portfolio",
     description: "My normal portfolio",
     date: "2024-09-10",
     demoLink: "https://nicolasportfolio-nicolas-projects-5730490e.vercel.app/",
